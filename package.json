@@ -1,0 +1,29 @@
+{
+  "name": "login-project",
+  "version": "1.0.0",
+  "description": "a project implement the server login functionality with jwt bcrypt",
+  "main": "server.js",
+  "scripts": {
+    "devStart": "nodemon server.js",
+    "devAuthStart": "nodemon authServer.js"
+  },
+  "keywords": [
+    "login",
+    "server",
+    "jwt",
+    "bcrypt"
+  ],
+  "author": "Aaron Lin",
+  "license": "MIT",
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  },
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.0.14"
+  }
+}
