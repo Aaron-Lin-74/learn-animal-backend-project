@@ -5,6 +5,7 @@ const users = require('./routes/api/users')
 const reviews = require('./routes/api/reviews')
 const animals = require('./routes/api/animals')
 const auth = require('./routes/api/auth')
+const subscription = require('./routes/api/subscription')
 const mongoose = require('mongoose')
 const cors = require('cors')
 
@@ -17,6 +18,7 @@ app.use('/api/users', users)
 app.use('/api/reviews', reviews)
 app.use('/api/animals', animals)
 app.use('/api/auth', auth)
+app.use('/api/subscription', subscription)
 
 async function start() {
   try {
